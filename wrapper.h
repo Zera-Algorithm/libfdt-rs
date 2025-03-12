@@ -81,3 +81,6 @@ int fdt_open_into(const void *fdt, void *buf, int bufsize);
 char* fdt_get_property_string(void *fdt, const char *path, const char *prop, int *len);
 
 int fdt_find_node(void *fdt, const char *path);
+
+int fdt_setprop_raw(void *fdt, int nodeoffset, const char *name,
+  const void *val, int len);
